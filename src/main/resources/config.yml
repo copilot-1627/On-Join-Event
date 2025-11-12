@@ -1,0 +1,45 @@
+# OnJoinEvent Configuration File
+# Version: 1.0.0
+
+# Plugin Settings
+settings:
+  # Enable debug mode for detailed logging
+  debug: false
+  
+  # Prefix for plugin messages
+  prefix: '&8[&6OJE&8]&r'
+  
+  # Auto-create example files on first load
+  create-examples: true
+  
+  # Default console logging for scripts
+  default-console-logging: false
+  
+  # Performance settings
+  performance:
+    # Maximum script execution time in milliseconds
+    max-execution-time: 5000
+    
+    # Enable async script execution for better performance
+    async-execution: true
+
+# Messages
+messages:
+  reload-success: '&aSuccessfully reloaded all scripts!'
+  reload-script-success: '&aSuccessfully reloaded script: &e{script}'
+  script-created: '&aCreated new script file: &e{filename}'
+  script-not-found: '&cScript not found: &e{script}'
+  no-permission: '&cYou do not have permission to use this command!'
+  invalid-usage: '&cInvalid usage! Use /oje help for more information.'
+  script-error: '&cError executing script: &e{script} &c- Check console for details'
+  
+# Script Variables
+# These variables can be used in all scripts
+global-variables:
+  server-name: 'Flaxa MC'
+  discord: 'discord.gg/flaxa'
+  website: 'flaxa.tech'
+  spawn-world: 'world'
+  spawn-x: 0
+  spawn-y: 100
+  spawn-z: 0

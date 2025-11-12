@@ -1,0 +1,24 @@
+name: OnJoinEvent
+version: '${project.version}'
+main: com.flaxa.onjoinevent.OnJoinEvent
+api-version: '1.21'
+load: POSTWORLD
+author: Flaxa
+description: Advanced join event handler with custom scripting
+website: https://github.com/copilot-1627/On-Join-Event
+
+commands:
+  oje:
+    description: Main OnJoinEvent command
+    usage: |
+      /<command> create <filename> - Create a new script file
+      /<command> reload [scriptname] - Reload all scripts or specific script
+      /<command> list - List all loaded scripts
+      /<command> help - Show help menu
+    permission: onjoinevent.admin
+    aliases: [onjoinevent, ojevent]
+
+permissions:
+  onjoinevent.admin:
+    description: Allows access to all OnJoinEvent commands
+    default: op
