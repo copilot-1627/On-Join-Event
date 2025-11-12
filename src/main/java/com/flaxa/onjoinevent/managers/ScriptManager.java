@@ -3,7 +3,6 @@ package com.flaxa.onjoinevent.managers;
 import com.flaxa.onjoinevent.OnJoinEvent;
 import com.flaxa.onjoinevent.models.Script;
 import com.flaxa.onjoinevent.models.ScriptAction;
-import com.flaxa.onjoinevent.utils.ColorUtils;
 import org.bukkit.entity.Player;
 
 import java.io.*;
@@ -213,10 +212,10 @@ public class ScriptManager {
     }
     
     public void createExampleFiles() {
-        createExampleFile("player-join.example", getPlayerJoinExample());
-        createExampleFile("first-join.example", getFirstJoinExample());
-        createExampleFile("specific-player.example", getSpecificPlayerExample());
-        createExampleFile("first-specific-player.example", getFirstSpecificPlayerExample());
+        createExampleFile("player-join.example", ExampleScripts.getPlayerJoinExample());
+        createExampleFile("first-join.example", ExampleScripts.getFirstJoinExample());
+        createExampleFile("specific-player.example", ExampleScripts.getSpecificPlayerExample());
+        createExampleFile("first-specific-player.example", ExampleScripts.getFirstSpecificPlayerExample());
     }
     
     private void createExampleFile(String fileName, String content) {
@@ -230,6 +229,4 @@ public class ScriptManager {
             }
         }
     }
-    
-    // Example file contents in separate methods (continued in next file)
 }
